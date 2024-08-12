@@ -1,0 +1,30 @@
+From 008485b189fbdcf4344acff02d2c09daf0d4200b Mon Sep 17 00:00:00 2001
+From: wjyrich <1071633242@qq.com>
+Date: Sun, 11 Aug 2024 18:38:22 +0800
+Subject: [PATCH] install
+
+---
+ WiiBaFu.pro | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/WiiBaFu.pro b/WiiBaFu.pro
+index 4d858f4..de833a7 100644
+--- a/WiiBaFu.pro
++++ b/WiiBaFu.pro
+@@ -38,10 +38,10 @@ CODECFORTR       = UTF-8
+ CODECFORSRC      = UTF-8
+ 
+ linux-g++ {
+-  target.path    = /usr/bin
+-  icon.path     += /usr/share/pixmaps
++  target.path    = $$PREFIX/bin
++  icon.path     += $$PREFIX/share/pixmaps
+   icon.files    += resources/images/WiiBaFu.png
+-  desktop.path  += /usr/share/applications
++  desktop.path  += $$PREFIX/share/applications
+   desktop.files += resources/WiiBaFu.desktop
+   INSTALLS      += target icon desktop
+ }
+-- 
+2.43.4
+
